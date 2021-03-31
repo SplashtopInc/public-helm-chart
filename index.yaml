@@ -1,43 +1,14 @@
 apiVersion: v1
 entries:
-  argo-cd:
-  - apiVersion: v1
-    appVersion: 1.7.6
-    created: "2021-03-31T12:19:53.007035+08:00"
-    dependencies:
-    - condition: redis-ha.enabled
-      name: redis-ha
-      repository: https://kubernetes-charts.storage.googleapis.com
-      version: 4.4.2
-    description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery tool for Kubernetes.
-    digest: 46686888c08bc7be9920dfb58120509cf655a207ac19aca09fc03bb7def5e9f9
-    home: https://github.com/argoproj/argo-helm
-    icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
-    keywords:
-    - argoproj
-    - argocd
-    - gitops
-    maintainers:
-    - name: alexec
-    - name: alexmt
-    - name: jessesuen
-    - name: seanson
-    name: argo-cd
-    urls:
-    - charts/argo-cd-2.7.4.tgz
-    version: 2.7.4
-  argocd:
+  helm-chart-test:
   - apiVersion: v2
-    created: "2021-03-31T12:19:53.002162+08:00"
-    dependencies:
-    - name: argo-cd
-      repository: https://argoproj.github.io/argo-helm
-      version: 2.7.4
-    description: A Helm chart to install argocd inside Kubernetes.
-    digest: 16956e618f30136a0a0644535e93bd913ccfb37299925e1b92837d23bc86cf99
-    name: argocd
+    appVersion: 1.16.0
+    created: "2021-03-31T12:29:51.388624+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 230d755b14da9351ccf4165d35f02a95c61bcbb1d3a2dd94575c8014d27333fd
+    name: helm-chart-test
     type: application
     urls:
-    - argocd-0.1.0.tgz
+    - https://splashtopinc.github.io/public-helm-chart/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-31T12:19:52.991705+08:00"
+generated: "2021-03-31T12:29:51.386359+08:00"
