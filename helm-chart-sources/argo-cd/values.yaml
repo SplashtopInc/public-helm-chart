@@ -15,3 +15,12 @@ global:
   image:
     repository: public.ecr.aws/k7c3r6j5/stp-argocd-grn565vx
     tag: latest
+
+## Repo Server
+repoServer:
+  name: repo-server
+  ## Environment variables to pass to argocd-repo-server
+  ##
+  env: 
+    - name: "AWS_REGION"
+      value: "ap-northeast-1"
