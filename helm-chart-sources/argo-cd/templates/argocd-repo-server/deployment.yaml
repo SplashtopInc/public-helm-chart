@@ -1,4 +1,3 @@
-# version 2.7.3 repo-server deployment
 {{- $redisHa := (index .Values "redis-ha") -}}
 apiVersion: apps/v1
 kind: Deployment
