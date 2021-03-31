@@ -3,7 +3,7 @@ entries:
   argo-cd:
   - apiVersion: v1
     appVersion: 1.7.6
-    created: "2021-03-31T10:34:37.007793+08:00"
+    created: "2021-03-31T10:40:52.980709+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -24,6 +24,6 @@ entries:
     - name: seanson
     name: argo-cd
     urls:
-    - https://github.com/SplashtopInc/public-helm-chart/argocd/charts/argo-cd-2.7.4.tgz
+    - https://github.com/SplashtopInc/public-helm-chart/charts/argo-cd-2.7.4.tgz
     version: 2.7.4
-generated: "2021-03-31T10:34:36.999801+08:00"
+generated: "2021-03-31T10:40:52.975855+08:00"
