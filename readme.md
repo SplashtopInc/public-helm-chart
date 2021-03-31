@@ -11,8 +11,7 @@ mkdir ./helm-chart-sources && cd ./helm-chart-sources/
 helm create helm-chart-sources/helm-chart-test
 ```
 
-## Create the Helm chart package
-modify the chart.yaml
+## modify the chart.yaml
 
 ensure the chart version and app version
 ![chart value graph](./readme-img/modfiy-chart-value.png)
