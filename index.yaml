@@ -3,7 +3,7 @@ entries:
   argo-cd:
   - apiVersion: v1
     appVersion: 1.7.6
-    created: "2021-03-31T10:40:52.980709+08:00"
+    created: "2021-03-31T12:19:53.007035+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -24,6 +24,20 @@ entries:
     - name: seanson
     name: argo-cd
     urls:
-    - https://github.com/SplashtopInc/public-helm-chart/charts/argo-cd-2.7.4.tgz
+    - charts/argo-cd-2.7.4.tgz
     version: 2.7.4
-generated: "2021-03-31T10:40:52.975855+08:00"
+  argocd:
+  - apiVersion: v2
+    created: "2021-03-31T12:19:53.002162+08:00"
+    dependencies:
+    - name: argo-cd
+      repository: https://argoproj.github.io/argo-helm
+      version: 2.7.4
+    description: A Helm chart to install argocd inside Kubernetes.
+    digest: 16956e618f30136a0a0644535e93bd913ccfb37299925e1b92837d23bc86cf99
+    name: argocd
+    type: application
+    urls:
+    - argocd-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-03-31T12:19:52.991705+08:00"
