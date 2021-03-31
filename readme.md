@@ -20,13 +20,12 @@ ensure the chart version and app version
 ```
 helm lint helm-chart-sources/*
 ```
-
+![helm lint](./readme-img/helm-lint.png)
 
 ## Create the Helm chart package
 ```
 helm package helm-chart-sources/*
 ```
-
 ![Helm package](./readme-img/Helm-package.png)
 
 ## Create the Helm chart repository index
