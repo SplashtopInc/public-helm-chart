@@ -1,3 +1,5 @@
+# Create a public Helm chart repository with GitHub Pages
+
 ## Create a helm chart from scratch (or copy your own)
 As a pre-requisite of this stage, you need to have the Helm CLI installed and initialized. Please find here the instructions in case you haven’t install Helm client yet.
 
