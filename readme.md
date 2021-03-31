@@ -13,7 +13,7 @@ helm create helm-chart-sources/helm-chart-test
 modify the chart.yaml
 
 ensure the chart version and app version
-![chart value graph](./readme-img/modfiy-chart-value.png.png)
+![chart value graph](./readme-img/modfiy-chart-value.png)
 
 ## Lint the chart
 
