@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-s3-proxy
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app.kubernetes.io/component: s3-proxy
+    app.kubernetes.io/name: argocd-s3-proxy
+    app.kubernetes.io/part-of: argocd
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: argocd-s3-proxy
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: argocd-s3-proxy
+    spec:
+      containers:
+      - name: s3-proxy
+        image: pottava/s3-proxy
+        env:
+          - name: AWS_REGION
+            value: {{ .Values.aws_region }}
+          - name: AWS_S3_BUCKET
+            value: {{ .Values.aws_s3_bucket }}
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: 50Mi
+            cpu: 10m
+          limits:
+            memory: 100Mi
+            cpu: 50m
