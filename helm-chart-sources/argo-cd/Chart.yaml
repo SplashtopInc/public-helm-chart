@@ -31,8 +31,8 @@ keywords:
   - argocd
   - gitops
 
-# use argo-cd 2.17.5
-dependencies:
-- name: argo-cd
-  version: 2.17.5
-  repository: "https://argoproj.github.io/argo-helm/charts/"
+# # use argo-cd 2.17.5
+# dependencies:
+# - name: argo-cd
+#   version: 2.17.5
+#   repository: "https://argoproj.github.io/argo-helm/charts/"

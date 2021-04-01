@@ -3,13 +3,14 @@ entries:
   argo-cd:
   - apiVersion: v2
     appVersion: 1.8.4
-    created: "2021-04-01T17:03:23.673604+08:00"
+    created: "2021-04-01T17:54:56.104362+08:00"
     dependencies:
-    - name: argo-cd
-      repository: https://argoproj.github.io/argo-helm/charts/
-      version: 2.17.5
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.10.4
     description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery tool for Kubernetes.
-    digest: 0df5f1f1637ec2b5a7e88c85641eb9b6941a97a0d2579d0e1bf5a037cf1518a4
+    digest: 7767f807b6165098f573ec0472dc95ca55d3fb6128a30fc9c86e300eedd4669b
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
     keywords:
@@ -24,12 +25,12 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-01T17:03:23.676296+08:00"
+    created: "2021-04-01T17:54:56.107213+08:00"
     description: A Helm chart for Kubernetes
-    digest: a3b5b82a99d74a21b7a9a2e7dfa9638b35ae80c8b5345829467eb7ac44268cb4
+    digest: 80c7690c573413e86f4f13905889c1eaa11d427caa7734e2133e02ed29c34fcf
     name: helm-chart-test
     type: application
     urls:
     - https://splashtopinc.github.io/public-helm-chart/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-01T17:03:23.665014+08:00"
+generated: "2021-04-01T17:54:56.097605+08:00"
