@@ -3,41 +3,27 @@ entries:
   argo-cd:
   - apiVersion: v2
     appVersion: 1.8.4
-    created: "2021-04-01T15:00:15.692885+08:00"
+    created: "2021-04-01T15:07:50.190758+08:00"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
       version: 2.17.5
     description: A Helm chart to install argocd inside Kubernetes.
-    digest: 1180e32344e5009bb45d883cdc900f0dc8729401a569e596d689be7199bec236
+    digest: bad5a8d96d4b055f6fedfc6a7b1e3aab4a552216e0f1effc120f0dd9e64954af
     name: argo-cd
     type: application
     urls:
     - https://splashtopinc.github.io/public-helm-chart/argo-cd-2.17.5.tgz
     version: 2.17.5
-  - apiVersion: v2
-    appVersion: 1.7.6
-    created: "2021-04-01T15:00:15.702247+08:00"
-    dependencies:
-    - name: argo-cd
-      repository: https://argoproj.github.io/argo-helm
-      version: 2.7.4
-    description: A Helm chart to install argocd inside Kubernetes.
-    digest: 7259b848edeb7e0a5b6b15798eedfeb02352e5c3f79b49c31a33594439972a01
-    name: argo-cd
-    type: application
-    urls:
-    - https://splashtopinc.github.io/public-helm-chart/argo-cd-2.7.4.tgz
-    version: 2.7.4
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-01T15:00:15.704746+08:00"
+    created: "2021-04-01T15:07:50.19388+08:00"
     description: A Helm chart for Kubernetes
-    digest: 23df6784ddfe687d18c4a150f189f797c85c37959c5a82894647dd148f7c0a19
+    digest: 8da190a64ef01dbc234ef403a15aa8a0ab43e2eb9ae0b4c6d299375f34dd6d4a
     name: helm-chart-test
     type: application
     urls:
     - https://splashtopinc.github.io/public-helm-chart/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-01T15:00:15.685969+08:00"
+generated: "2021-04-01T15:07:50.183498+08:00"
