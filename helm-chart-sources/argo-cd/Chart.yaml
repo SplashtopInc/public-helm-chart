@@ -1,6 +1,6 @@
 apiVersion: v2
 name: argo-cd
-description: A Helm chart to install argocd inside Kubernetes.
+description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery tool for Kubernetes.
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -23,8 +23,16 @@ version: 2.17.5
 # It is recommended to use it with quotes.
 appVersion: 1.8.4
 
+home: https://github.com/argoproj/argo-helm
+icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
+
+keywords:
+  - argoproj
+  - argocd
+  - gitops
+
 # use argo-cd 2.17.5
 dependencies:
 - name: argo-cd
   version: 2.17.5
-  repository: "https://argoproj.github.io/argo-helm"
+  repository: "https://argoproj.github.io/argo-helm/charts/"
