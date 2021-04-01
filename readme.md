@@ -1,3 +1,33 @@
+# How to use this chart repo
+
+## Add the splashtop helm repo
+
+```
+helm repo add splashtop https://splashtopinc.github.io/public-helm-chart/
+```
+![helm add repo](./readme-img/helm-add-repo.png)
+
+## helm 
+
+```
+# --dry-run
+ helm install argocd splashtop/argo-cd -n argocd \
+ --set 'argo-cd.repoServer.env[0].name=AWS_REGION' \
+ --set 'argo-cd.repoServer.env[0].value=ap-northeast-1' --dry-run
+
+# install 
+ helm install argocd splashtop/argo-cd -n argocd \
+ --set 'argo-cd.repoServer.env[0].name=AWS_REGION' \
+ --set 'argo-cd.repoServer.env[0].value=ap-northeast-1'
+
+# upgrade
+helm upgrade argocd splashtop/argo-cd -n argocd
+
+```
+![dry-run](./readme-img/dry-run.png)
+
+***
+
 # Create a public Helm chart repository with GitHub Pages
 
 ## Create a helm chart from scratch (or copy your own)
@@ -58,27 +88,7 @@ git add . && git commit -m "argocd chart version update" && git push origin mast
 
 ![github pages](./readme-img/gitHub-pages.png)
 
-## Add the splashtop helm repo
-
-```
-helm repo add splashtop https://splashtopinc.github.io/public-helm-chart/
-```
-![helm add repo](./readme-img/helm-add-repo.png)
-
-## helm 
-
-```
-# --dry-run
-helm install argocd splashtop/argo-cd -n argocd --dry-run
-
-# install 
-helm install argocd splashtop/argo-cd -n argocd 
-
-# upgrade
-helm upgrade argocd splashtop/argo-cd -n argocd
-
-```
-![dry-run](./readme-img/dry-run.png)
+***
 
 Ref:   
 
