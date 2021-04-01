@@ -2,7 +2,7 @@ aws_region: ap-northeast-1
 aws_s3_bucket: stp-devops-helm
 
 
-### 2.7.4 version values.yaml
+### 2.17.5 version values.yaml
 
 ## ArgoCD configuration
 ## Ref: https://github.com/argoproj/argo-cd
@@ -13,8 +13,8 @@ fullnameOverride: ""
 installCRDs: true
 global:
   image:
-    repository: public.ecr.aws/k7c3r6j5/stp-argocd-grn565vx
-    tag: latest
+    repository: jeff51419/argocd-s3
+    tag: v1.8.4
 
 ## Repo Server
 repoServer:
