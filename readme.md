@@ -22,6 +22,40 @@ helm upgrade argocd splashtop/argo-cd -n argocd
 ```
 ![dry-run](./readme-img/dry-run.png)
 
+## Port Forwarding
+
+Kubectl port-forwarding can also be used to connect to the API server without exposing the service.
+
+```
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+```
+
+The API server can then be accessed using the localhost:8080
+
+## Login Using The CLI
+
+*Argo CD v1.9 and later*
+
+The initial password for the admin account is auto-generated and stored as clear text in the field password in a secret named argocd-initial-admin-secret in your Argo CD installation namespace. You can simply retrieve this password using kubectl:
+
+```
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+```
+
+For better readability, e.g. if you want to copy & paste the generated password, you can simply append && echo to above command, which will add a newline to the output.
+
+Using the username admin and the password from above, login to Argo CD's IP or hostname:
+argocd login <ARGOCD_SERVER>  # e.g. localhost:8080 or argocd.example.com
+
+```
+argocd login localhost:8080
+or
+argocd login localhost:8080 --username admin --password zpsNdQWhHjkYDdwC
+```
+![argocd-cli-login](./readme-img/argocd-cli-login.png)
+
+***
+
 ***
 
 # Create a public Helm chart repository with GitHub Pages
