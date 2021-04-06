@@ -44,8 +44,8 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 
 For better readability, e.g. if you want to copy & paste the generated password, you can simply append && echo to above command, which will add a newline to the output.
 
-Using the username admin and the password from above, login to Argo CD's IP or hostname:
-argocd login <ARGOCD_SERVER>  # e.g. localhost:8080 or argocd.example.com
+Using the username admin and the password from above, login to Argo CD's IP or hostname:   
+argocd login <ARGOCD_SERVER>  # e.g. localhost:8080 or argocd.example.com   
 
 ```
 argocd login localhost:8080
