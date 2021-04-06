@@ -14,7 +14,7 @@ helm repo add splashtop https://splashtopinc.github.io/public-helm-chart/
 helm install argocd splashtop/argo-cd -n argocd --dry-run
 
 # install 
-helm install argocd splashtop/argo-cd -n argocd 
+helm install argocd splashtop/argo-cd -n argocd  --create-namespace
 
 # upgrade
 helm upgrade argocd splashtop/argo-cd -n argocd 
