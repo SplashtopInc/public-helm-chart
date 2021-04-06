@@ -11,17 +11,13 @@ helm repo add splashtop https://splashtopinc.github.io/public-helm-chart/
 
 ```
 # --dry-run
- helm install argocd splashtop/argo-cd -n argocd \
- --set 'argo-cd.repoServer.env[0].name=AWS_REGION' \
- --set 'argo-cd.repoServer.env[0].value=ap-northeast-1' --dry-run
+helm install argocd splashtop/argo-cd -n argocd --dry-run
 
 # install 
- helm install argocd splashtop/argo-cd -n argocd \
- --set 'argo-cd.repoServer.env[0].name=AWS_REGION' \
- --set 'argo-cd.repoServer.env[0].value=ap-northeast-1'
+helm install argocd splashtop/argo-cd -n argocd 
 
 # upgrade
-helm upgrade argocd splashtop/argo-cd -n argocd
+helm upgrade argocd splashtop/argo-cd -n argocd 
 
 ```
 ![dry-run](./readme-img/dry-run.png)
