@@ -67,3 +67,27 @@ spec:
     helm:
       version: v3
 ```
+
+***
+
+# Push commands for stp-argocd-guj52ta
+1. Retrieve an authentication token and authenticate your Docker client to your registry. 
+Use the AWS CLI:
+```
+aws ecr-public get-login-password --region us-east-1 --profile aad-sso-tperd | docker login --username AWS --password-stdin public.ecr.aws/k7c3r6j5
+```
+
+2. Build your Docker image using the following command. For information on building a Docker file from scratch see the instructions here . You can skip this step if your image is already built:
+```
+docker build -t stp-argocd-guj52ta .
+```
+
+3. After the build completes, tag your image so you can push the image to this repository:
+```
+docker tag stp-argocd-guj52ta:latest public.ecr.aws/k7c3r6j5/stp-argocd-guj52ta:latest
+```
+
+4. Run the following command to push this image to your newly created AWS repository:
+```
+docker push public.ecr.aws/k7c3r6j5/stp-argocd-guj52ta:latest
+```

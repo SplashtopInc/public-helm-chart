@@ -12,7 +12,7 @@ installCRDs: true
 
 global:
   image:
-    repository: jeff51419/argocd-s3
+    repository: public.ecr.aws/k7c3r6j5/stp-argocd-guj52ta
     tag: v1.8.4
     imagePullPolicy: IfNotPresent
   securityContext: {}
