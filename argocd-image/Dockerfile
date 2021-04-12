@@ -1,5 +1,5 @@
 # argocd version
-FROM argoproj/argocd:latest
+FROM argoproj/argocd:v2.0.0
 
 # Switch to root for the ability to perform install
 USER root
