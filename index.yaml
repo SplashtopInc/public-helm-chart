@@ -3,7 +3,7 @@ entries:
   argo-cd:
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2021-04-16T16:48:25.923338+08:00"
+    created: "2021-04-16T17:04:11.854468+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -26,7 +26,7 @@ entries:
     version: 3.0.0
   - apiVersion: v2
     appVersion: 1.8.4
-    created: "2021-04-16T16:48:25.917233+08:00"
+    created: "2021-04-16T17:04:11.848759+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -48,9 +48,9 @@ entries:
   aws-cloudwatch-metrics:
   - apiVersion: v1
     appVersion: "1.247345"
-    created: "2021-04-16T16:48:25.926926+08:00"
+    created: "2021-04-16T17:04:11.858438+08:00"
     description: A Helm chart to deploy aws-cloudwatch-metrics project
-    digest: bf0d6d8a9c6542317db32e37cdc13b74eb85aad19dda389c9e2b9fab95f35f8a
+    digest: 11e8d33d450d3e68532a54072e17a7a13b41ad1978164b0e6e5cb00aabd7f8a4
     home: https://github.com/aws/eks-charts
     icon: https://raw.githubusercontent.com/aws/eks-charts/master/docs/logo/aws.png
     keywords:
@@ -67,7 +67,7 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-16T16:48:25.92989+08:00"
+    created: "2021-04-16T17:04:11.861497+08:00"
     description: A Helm chart for Kubernetes
     digest: cdf83a0d3c2e9d341b38bd2025d90936241883c562d841133fdf209ac7572488
     name: helm-chart-test
@@ -75,4 +75,4 @@ entries:
     urls:
     - https://splashtopinc.github.io/public-helm-chart/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-16T16:48:25.911063+08:00"
+generated: "2021-04-16T17:04:11.843451+08:00"
