@@ -22,8 +22,6 @@ spec:
           #  - containerPort: 8125
           #    hostPort: 8125
           #    protocol: UDP
-          resources:
-              {{- toYaml .Values.resources | nindent 10 }}
           # Please don't change below envs
           env:
             - name: HOST_IP
@@ -59,7 +57,8 @@ spec:
             - name: devdisk
               mountPath: /dev/disk
               readOnly: true
-          
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
       volumes:
         - name: cwagentconfig
           configMap:
