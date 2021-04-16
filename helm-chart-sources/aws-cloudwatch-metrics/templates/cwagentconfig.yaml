@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cwagentconfig
+data:
+  cwagentconfig.json: |
+    {
+      "agent": {
+        "region": "{{ .Values.regionName }}"
+      },
+      "logs": {
+        "metrics_collected": {
+          "kubernetes": {
+            "cluster_name": "{{ .Values.clusterName }}",
+            "metrics_collection_interval": 60
+          }
+        },
+        "force_flush_interval": 5
+      }
+    }

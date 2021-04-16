@@ -1,0 +1,26 @@
+image:
+  repository: amazon/cloudwatch-agent
+  tag: 1.247347.3b250378
+  pullPolicy: IfNotPresent
+
+clusterName: cluster_name
+regionName: region_name
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 200Mi
+  requests:
+    cpu: 200m
+    memory: 200Mi
+
+fluentBit:
+  HttpServer: On
+  HttpPort: 2020
+  ReadHead: Off
+  readTail: On
+
+serviceAccount:
+  create: true
+
+hostNetwork: false
