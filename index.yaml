@@ -3,14 +3,14 @@ entries:
   argo-cd:
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2021-04-16T17:14:09.12319+08:00"
+    created: "2021-04-16T17:23:15.450051+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
       repository: https://dandydeveloper.github.io/charts/
       version: 4.10.1
     description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery tool for Kubernetes.
-    digest: 5c39dd76520237a8978f7b2bd8142b6c569f6061995d805f196cac532004c873
+    digest: c963d20791e191e2954b67c79be9463f2fc601967fa17018bb32e69dbc3d1d19
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
     keywords:
@@ -26,7 +26,7 @@ entries:
     version: 3.0.0
   - apiVersion: v2
     appVersion: 1.8.4
-    created: "2021-04-16T17:14:09.118034+08:00"
+    created: "2021-04-16T17:23:15.442565+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -48,7 +48,7 @@ entries:
   aws-cloudwatch-metrics:
   - apiVersion: v1
     appVersion: "1.247345"
-    created: "2021-04-16T17:14:09.127274+08:00"
+    created: "2021-04-16T17:23:15.4537+08:00"
     description: A Helm chart to deploy aws-cloudwatch-metrics project
     digest: e9cd319e61310e97768f91f0f1916750408f20e0c41b3bc8b7c96cb30d6285e2
     home: https://github.com/aws/eks-charts
@@ -64,15 +64,34 @@ entries:
     urls:
     - https://splashtopinc.github.io/public-helm-chart/aws-cloudwatch-metrics-0.0.4.tgz
     version: 0.0.4
+  cloudwatch-agent:
+  - apiVersion: v1
+    appVersion: "1.247345"
+    created: "2021-04-16T17:23:15.456324+08:00"
+    description: A Helm chart to deploy aws-cloudwatch-metrics with fluent bit
+    digest: 18d48fbf02838627ef8970fbd41964fbe0a4635b1f512d67b28dcf154ecdcfa6
+    home: https://splashtopinc.github.io/public-helm-chart/
+    icon: https://raw.githubusercontent.com/aws/eks-charts/master/docs/logo/aws.png
+    keywords:
+    - eks
+    - cloudwatch
+    - cloudwatch-metrics
+    - containerinsights
+    name: cloudwatch-agent
+    sources:
+    - https://splashtopinc.github.io/public-helm-chart/
+    urls:
+    - https://splashtopinc.github.io/public-helm-chart/cloudwatch-agent-0.0.4.tgz
+    version: 0.0.4
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-16T17:14:09.1306+08:00"
+    created: "2021-04-16T17:23:15.459939+08:00"
     description: A Helm chart for Kubernetes
-    digest: cdf83a0d3c2e9d341b38bd2025d90936241883c562d841133fdf209ac7572488
+    digest: 01c4caf56c7ef9a2243bd9193ee95e2874e48794d252a23adf4040b025b2cc4e
     name: helm-chart-test
     type: application
     urls:
     - https://splashtopinc.github.io/public-helm-chart/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-16T17:14:09.111425+08:00"
+generated: "2021-04-16T17:23:15.436075+08:00"
