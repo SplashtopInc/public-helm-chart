@@ -45,25 +45,6 @@ entries:
     urls:
     - https://splashtopinc.github.io/public-helm-chart/argo-cd-2.17.5.tgz
     version: 2.17.5
-  aws-cloudwatch-metrics:
-  - apiVersion: v1
-    appVersion: "1.247345"
-    created: "2021-04-16T17:23:15.4537+08:00"
-    description: A Helm chart to deploy aws-cloudwatch-metrics project
-    digest: e9cd319e61310e97768f91f0f1916750408f20e0c41b3bc8b7c96cb30d6285e2
-    home: https://github.com/aws/eks-charts
-    icon: https://raw.githubusercontent.com/aws/eks-charts/master/docs/logo/aws.png
-    keywords:
-    - eks
-    - cloudwatch
-    - cloudwatch-metrics
-    - containerinsights
-    name: aws-cloudwatch-metrics
-    sources:
-    - https://github.com/aws/eks-charts
-    urls:
-    - https://splashtopinc.github.io/public-helm-chart/aws-cloudwatch-metrics-0.0.4.tgz
-    version: 0.0.4
   cloudwatch-agent:
   - apiVersion: v1
     appVersion: "1.247345"
