@@ -9,4 +9,4 @@ data:
 kind: ConfigMap
 metadata:
   name: fluent-bit-cluster-info
-  namespace: amazon-cloudwatch
+  namespace: {{ .Release.Namespace }}

@@ -3,14 +3,14 @@ entries:
   argo-cd:
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2021-04-16T16:04:28.51396+08:00"
+    created: "2021-04-16T16:36:30.08308+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
       repository: https://dandydeveloper.github.io/charts/
       version: 4.10.1
     description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery tool for Kubernetes.
-    digest: fc39305942dad01b4aeb3647c5088f8f6bc92319f36249f2b766156bb375d9e7
+    digest: 5c39dd76520237a8978f7b2bd8142b6c569f6061995d805f196cac532004c873
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
     keywords:
@@ -26,7 +26,7 @@ entries:
     version: 3.0.0
   - apiVersion: v2
     appVersion: 1.8.4
-    created: "2021-04-16T16:04:28.505388+08:00"
+    created: "2021-04-16T16:36:30.075174+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -48,9 +48,9 @@ entries:
   aws-cloudwatch-metrics:
   - apiVersion: v1
     appVersion: "1.247345"
-    created: "2021-04-16T16:04:28.516329+08:00"
+    created: "2021-04-16T16:36:30.085591+08:00"
     description: A Helm chart to deploy aws-cloudwatch-metrics project
-    digest: b609f51e00e9822f14e37659dc2c02d0c4f6e2bbea2ba5037df5fe0ceecb7818
+    digest: a4c9063ac63216f646ac37c8a1fa3d06fc6ca5b6bc6dffb28e3fbc5ca1659661
     home: https://github.com/aws/eks-charts
     icon: https://raw.githubusercontent.com/aws/eks-charts/master/docs/logo/aws.png
     keywords:
@@ -67,12 +67,12 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-16T16:04:28.51717+08:00"
+    created: "2021-04-16T16:36:30.088797+08:00"
     description: A Helm chart for Kubernetes
-    digest: d391e5d20d3dfe0ef1a00548e03ec63046f11de9bd84ef962ed01ba1adf878c2
+    digest: cdf83a0d3c2e9d341b38bd2025d90936241883c562d841133fdf209ac7572488
     name: helm-chart-test
     type: application
     urls:
     - https://splashtopinc.github.io/public-helm-chart/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-16T16:04:28.496541+08:00"
+generated: "2021-04-16T16:36:30.068814+08:00"

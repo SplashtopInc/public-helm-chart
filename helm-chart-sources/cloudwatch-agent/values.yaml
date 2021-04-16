@@ -3,8 +3,8 @@ image:
   tag: 1.247347.3b250378
   pullPolicy: IfNotPresent
 
-clusterName: cluster_name
-regionName: region_name
+clusterName: be-app-test-aps1-ud2pssil
+regionName: ap-southeast-1
 
 resources:
   limits:
@@ -15,10 +15,10 @@ resources:
     memory: 200Mi
 
 fluentBit:
-  HttpServer: On
-  HttpPort: 2020
-  ReadHead: Off
-  readTail: On
+  HttpServer: "On"
+  HttpPort: "2020"
+  ReadHead: "Off"
+  readTail: "On"
 
 serviceAccount:
   create: true
