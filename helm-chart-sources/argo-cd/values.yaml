@@ -496,6 +496,7 @@ server:
     enabled: false
     annotations: {}
     labels: {}
+    ingressClassName: ""
 
     ## Argo Ingress.
     ## Hostnames must be provided if Ingress is enabled.
@@ -524,6 +525,7 @@ server:
     enabled: false
     annotations: {}
     labels: {}
+    ingressClassName: ""
 
     ## Argo Ingress.
     ## Hostnames must be provided if Ingress is enabled.
@@ -877,6 +879,29 @@ repoServer:
 
 ## Argo Configs
 configs:
+  ## External Cluster Credentials
+  ## reference:
+  ## - https://argoproj.github.io/argo-cd/operator-manual/declarative-setup/#clusters
+  ## - https://argoproj.github.io/argo-cd/operator-manual/security/#external-cluster-credentials
+  clusterCredentials: []
+    # - name: mycluster
+    #   server: https://mycluster.com
+    #   annotations: {}
+    #   config:
+    #     bearerToken: "<authentication token>"
+    #     tlsClientConfig:
+    #       insecure: false
+    #       caData: "<base64 encoded certificate>"
+    # - name: mycluster2
+    #   server: https://mycluster2.com
+    #   annotations: {}
+    #   namespaces: namespace1,namespace2
+    #   config:
+    #     bearerToken: "<authentication token>"
+    #     tlsClientConfig:
+    #       insecure: false
+    #       caData: "<base64 encoded certificate>"
+
   knownHostsAnnotations: {}
   knownHosts:
     data:
@@ -986,3 +1011,4 @@ configs:
 
 openshift:
   enabled: false
+  

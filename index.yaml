@@ -3,7 +3,30 @@ entries:
   argo-cd:
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2021-04-16T18:02:04.448302+08:00"
+    created: "2021-04-22T10:59:40.040606+08:00"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.10.4
+    description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery tool for Kubernetes.
+    digest: 216ab9caddaea1c88c54207e72983d91e542105457f9f7cde976a6a5548ca8c4
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    maintainers:
+    - name: JeffYen
+    name: argo-cd
+    type: application
+    urls:
+    - https://splashtopinc.github.io/public-helm-chart/argo-cd-3.2.0.tgz
+    version: 3.2.0
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: "2021-04-22T10:59:40.030017+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -26,7 +49,7 @@ entries:
     version: 3.0.0
   - apiVersion: v2
     appVersion: 1.8.4
-    created: "2021-04-16T18:02:04.440067+08:00"
+    created: "2021-04-22T10:59:40.02091+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -48,7 +71,7 @@ entries:
   cloudwatch-agent:
   - apiVersion: v1
     appVersion: "1.247345"
-    created: "2021-04-16T18:02:04.452099+08:00"
+    created: "2021-04-22T10:59:40.043723+08:00"
     description: A Helm chart to deploy aws-cloudwatch-metrics with fluent bit
     digest: de8777ee25213b4f8a0500b15171d04d592895f977989fa226233eb6ac84db0e
     home: https://splashtopinc.github.io/public-helm-chart/
@@ -67,7 +90,7 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-16T18:02:04.455005+08:00"
+    created: "2021-04-22T10:59:40.046308+08:00"
     description: A Helm chart for Kubernetes
     digest: 01c4caf56c7ef9a2243bd9193ee95e2874e48794d252a23adf4040b025b2cc4e
     name: helm-chart-test
@@ -75,4 +98,4 @@ entries:
     urls:
     - https://splashtopinc.github.io/public-helm-chart/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-16T18:02:04.431819+08:00"
+generated: "2021-04-22T10:59:40.010515+08:00"
