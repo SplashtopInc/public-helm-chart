@@ -1,0 +1,40 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  # annotations:
+  name: {{ .Values.cronJob.name }}
+spec:
+  concurrencyPolicy: Allow
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccountName: {{.Values.serviceAccount.name}}
+          containers:
+          - command:
+            - /bin/sh
+            - -c
+            - |-
+              AWS_TOKEN=`aws ecr get-login-password --region {{.Values.aws.region}} | cut -d' ' -f6`
+              echo "ENV variables setup done."
+
+              kubectl patch secret aws-ecr-token -p '{"data":{"password":"'`echo $AWS_TOKEN | base64 | tr -d '\n'`'"}}' -n argocd
+              echo "All done."
+            image: {{ .Values.cronJob.image }}
+            imagePullPolicy: {{ .Values.cronJob.imagePullPolicy }}
+            name: {{ .Values.cronJob.jobName }}
+            resources: {}
+            securityContext:
+              capabilities: {}
+            terminationMessagePath: /dev/termination-log
+            terminationMessagePolicy: File
+          dnsPolicy: Default
+          hostNetwork: true
+          restartPolicy: Never
+          schedulerName: default-scheduler
+          securityContext: {}
+          terminationGracePeriodSeconds: 30
+  schedule: "{{ .Values.cronJob.schedule }}"
+  successfulJobsHistoryLimit: 3
+  suspend: false

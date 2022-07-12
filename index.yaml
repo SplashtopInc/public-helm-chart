@@ -3,14 +3,15 @@ entries:
   argo-cd:
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2021-04-22T11:02:57.859151+08:00"
+    created: "2022-07-12T17:14:43.750021+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
       repository: https://dandydeveloper.github.io/charts/
       version: 4.10.4
-    description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery tool for Kubernetes.
-    digest: 06c7bb722f5dc69757acd68f3b5d6664fa7d26c2fb9b9549a260e89b9aaf4423
+    description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: a51e0dcb73576966f6d44fc53e83c0011f774752b959d0bad52ecaa035aad9a3
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
     keywords:
@@ -26,13 +27,14 @@ entries:
     version: 3.2.0
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2021-04-22T11:02:57.850254+08:00"
+    created: "2022-07-12T17:14:43.745825+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
       repository: https://dandydeveloper.github.io/charts/
-      version: 4.10.4
-    description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery tool for Kubernetes.
+      version: 4.10.1
+    description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
     digest: c963d20791e191e2954b67c79be9463f2fc601967fa17018bb32e69dbc3d1d19
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
@@ -49,13 +51,14 @@ entries:
     version: 3.0.0
   - apiVersion: v2
     appVersion: 1.8.4
-    created: "2021-04-22T11:02:57.844763+08:00"
+    created: "2022-07-12T17:14:43.738624+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
       repository: https://dandydeveloper.github.io/charts/
       version: 4.10.4
-    description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery tool for Kubernetes.
+    description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
     digest: bcf9556f567590daf64147f863a53707917616476a675b30a9703e0f550906f3
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
@@ -68,12 +71,23 @@ entries:
     urls:
     - https://splashtopinc.github.io/public-helm-chart/argo-cd-2.17.5.tgz
     version: 2.17.5
+  argocd-ecr-updater:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-12T17:14:43.750461+08:00"
+    description: A Helm chart for Kubernetes
+    digest: d2002633656136b30005cf75328ad9b43b01aff8711ee93a723ea40c3696fcee
+    name: argocd-ecr-updater
+    type: application
+    urls:
+    - https://splashtopinc.github.io/public-helm-chart/argocd-ecr-updater-0.1.0.tgz
+    version: 0.1.0
   cloudwatch-agent:
   - apiVersion: v1
     appVersion: "1.247345"
-    created: "2021-04-22T11:02:57.860735+08:00"
+    created: "2022-07-12T17:14:43.751039+08:00"
     description: A Helm chart to deploy aws-cloudwatch-metrics with fluent bit
-    digest: c801d98c6940063bc5675357248db2c107bda5ede7f2d66d3aeb64802123a335
+    digest: 36d3b813b1ad888209c54fafdef6cbaa2749d5784b17e6bb64ddef778ee7a568
     home: https://splashtopinc.github.io/public-helm-chart/
     icon: https://raw.githubusercontent.com/aws/eks-charts/master/docs/logo/aws.png
     keywords:
@@ -90,12 +104,12 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-22T11:02:57.862866+08:00"
+    created: "2022-07-12T17:14:43.753692+08:00"
     description: A Helm chart for Kubernetes
-    digest: 0751e7f4f4b4cdc227f5f9b06b2fb45641defbeb16b96d5d292f1d95c99fb601
+    digest: d6b331c346874e69a81d43d7150ed5087999d7a9022512aeb4593cdb6cb8d077
     name: helm-chart-test
     type: application
     urls:
     - https://splashtopinc.github.io/public-helm-chart/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-22T11:02:57.839077+08:00"
+generated: "2022-07-12T17:14:43.730094+08:00"
