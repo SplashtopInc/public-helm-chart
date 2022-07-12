@@ -3,7 +3,7 @@ entries:
   argo-cd:
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2022-07-12T17:22:20.443738+08:00"
+    created: "2022-07-12T18:32:21.172749+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -11,7 +11,7 @@ entries:
       version: 4.10.4
     description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
-    digest: e5b9d22765ec43cf4b84cac1ac8062ffa72df8660091b7a556284936574ecf36
+    digest: 4d49e47fb43c640dc39e54642b378570975edfba0f143f6f72a328c84ec8c1aa
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
     keywords:
@@ -27,7 +27,7 @@ entries:
     version: 3.2.0
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2022-07-12T17:22:20.439249+08:00"
+    created: "2022-07-12T18:32:21.165168+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -51,7 +51,7 @@ entries:
     version: 3.0.0
   - apiVersion: v2
     appVersion: 1.8.4
-    created: "2022-07-12T17:22:20.433685+08:00"
+    created: "2022-07-12T18:32:21.159234+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -74,20 +74,30 @@ entries:
   argocd-ecr-updater:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-07-12T17:22:20.445782+08:00"
+    created: "2022-07-12T18:32:21.174321+08:00"
     description: ArgoCD ECR Repository Token Refresher
-    digest: 303f65c4b61931162c737c77536cdd39437d2dd8bab067a5f6513c416cd10d88
+    digest: 7849301f15979952a3f9c074bc6c29d235fd8d97a58142a1fadd8f7e23f1dded
     name: argocd-ecr-updater
     type: application
     urls:
     - https://splashtopinc.github.io/public-helm-chart/argocd-ecr-updater-1.0.0.tgz
     version: 1.0.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-12T18:32:21.173823+08:00"
+    description: A Helm chart for Kubernetes
+    digest: d2002633656136b30005cf75328ad9b43b01aff8711ee93a723ea40c3696fcee
+    name: argocd-ecr-updater
+    type: application
+    urls:
+    - https://splashtopinc.github.io/public-helm-chart/argocd-ecr-updater-0.1.0.tgz
+    version: 0.1.0
   cloudwatch-agent:
   - apiVersion: v1
     appVersion: "1.247345"
-    created: "2022-07-12T17:22:20.447833+08:00"
+    created: "2022-07-12T18:32:21.17506+08:00"
     description: A Helm chart to deploy aws-cloudwatch-metrics with fluent bit
-    digest: d9d3086208e17531195659419cac721401e46d6bc23ca55866af739871bbd844
+    digest: 389d5dcf785bde61a3d22b4edeaf8fc18fcf946d93ed103abbf0569380114bf4
     home: https://splashtopinc.github.io/public-helm-chart/
     icon: https://raw.githubusercontent.com/aws/eks-charts/master/docs/logo/aws.png
     keywords:
@@ -104,12 +114,12 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-12T17:22:20.448649+08:00"
+    created: "2022-07-12T18:32:21.175609+08:00"
     description: A Helm chart for Kubernetes
-    digest: fefd8a54bbc9178ec146ef223ad34208ba79ab1c43e265f084c1ce136618571f
+    digest: 45c4d951c847ca06dadf679e91a0ccccaf0e645047bdbbd37273907c820d0241
     name: helm-chart-test
     type: application
     urls:
     - https://splashtopinc.github.io/public-helm-chart/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-12T17:22:20.428839+08:00"
+generated: "2022-07-12T18:32:21.143572+08:00"

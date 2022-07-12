@@ -3,8 +3,8 @@
 # Declare variables to be passed into your templates.
 
 aws:
-  accountId: "385284847228"
-  region: ap-northeast-3
+  accountId: "11111111111"
+  region: ap-northeast-5
 
 cronJob:
   name: argocd-ecr-updater-cronjob
