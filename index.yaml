@@ -3,7 +3,7 @@ entries:
   argo-cd:
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2022-07-12T17:14:43.750021+08:00"
+    created: "2022-07-12T17:22:20.443738+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -11,7 +11,7 @@ entries:
       version: 4.10.4
     description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
-    digest: a51e0dcb73576966f6d44fc53e83c0011f774752b959d0bad52ecaa035aad9a3
+    digest: e5b9d22765ec43cf4b84cac1ac8062ffa72df8660091b7a556284936574ecf36
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
     keywords:
@@ -27,7 +27,7 @@ entries:
     version: 3.2.0
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2022-07-12T17:14:43.745825+08:00"
+    created: "2022-07-12T17:22:20.439249+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -51,7 +51,7 @@ entries:
     version: 3.0.0
   - apiVersion: v2
     appVersion: 1.8.4
-    created: "2022-07-12T17:14:43.738624+08:00"
+    created: "2022-07-12T17:22:20.433685+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -73,21 +73,21 @@ entries:
     version: 2.17.5
   argocd-ecr-updater:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-07-12T17:14:43.750461+08:00"
-    description: A Helm chart for Kubernetes
-    digest: d2002633656136b30005cf75328ad9b43b01aff8711ee93a723ea40c3696fcee
+    appVersion: 1.0.0
+    created: "2022-07-12T17:22:20.445782+08:00"
+    description: ArgoCD ECR Repository Token Refresher
+    digest: 303f65c4b61931162c737c77536cdd39437d2dd8bab067a5f6513c416cd10d88
     name: argocd-ecr-updater
     type: application
     urls:
-    - https://splashtopinc.github.io/public-helm-chart/argocd-ecr-updater-0.1.0.tgz
-    version: 0.1.0
+    - https://splashtopinc.github.io/public-helm-chart/argocd-ecr-updater-1.0.0.tgz
+    version: 1.0.0
   cloudwatch-agent:
   - apiVersion: v1
     appVersion: "1.247345"
-    created: "2022-07-12T17:14:43.751039+08:00"
+    created: "2022-07-12T17:22:20.447833+08:00"
     description: A Helm chart to deploy aws-cloudwatch-metrics with fluent bit
-    digest: 36d3b813b1ad888209c54fafdef6cbaa2749d5784b17e6bb64ddef778ee7a568
+    digest: d9d3086208e17531195659419cac721401e46d6bc23ca55866af739871bbd844
     home: https://splashtopinc.github.io/public-helm-chart/
     icon: https://raw.githubusercontent.com/aws/eks-charts/master/docs/logo/aws.png
     keywords:
@@ -104,12 +104,12 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-12T17:14:43.753692+08:00"
+    created: "2022-07-12T17:22:20.448649+08:00"
     description: A Helm chart for Kubernetes
-    digest: d6b331c346874e69a81d43d7150ed5087999d7a9022512aeb4593cdb6cb8d077
+    digest: fefd8a54bbc9178ec146ef223ad34208ba79ab1c43e265f084c1ce136618571f
     name: helm-chart-test
     type: application
     urls:
     - https://splashtopinc.github.io/public-helm-chart/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-12T17:14:43.730094+08:00"
+generated: "2022-07-12T17:22:20.428839+08:00"
