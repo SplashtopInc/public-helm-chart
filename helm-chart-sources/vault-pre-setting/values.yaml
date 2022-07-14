@@ -1,0 +1,12 @@
+# Default values for argocd-ecr-updater.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+vault:
+  namespace: vault
+  serviceAccount: vault-serviceaccount
+  clusterRoleBinding: role-tokenreview-binding
+
+app:
+  namespace: be-app
+  serviceAccount: be-app-serviceaccount
