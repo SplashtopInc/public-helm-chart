@@ -3,7 +3,7 @@ entries:
   argo-cd:
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2022-07-14T16:43:45.729207+08:00"
+    created: "2022-08-19T15:30:41.211698+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -11,7 +11,7 @@ entries:
       version: 4.10.4
     description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
-    digest: 096ad3d7c23f50bc0aa7c7a7176941238f6942bf5cf9a2715661c75117bd83b3
+    digest: 1a82ac42ed1547022e4be0b570b62f30cd40e5ffff741b1e2eb77362ad5eaf8f
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
     keywords:
@@ -27,7 +27,7 @@ entries:
     version: 3.2.0
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2022-07-14T16:43:45.721647+08:00"
+    created: "2022-08-19T15:30:41.203715+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -51,7 +51,7 @@ entries:
     version: 3.0.0
   - apiVersion: v2
     appVersion: 1.8.4
-    created: "2022-07-14T16:43:45.714821+08:00"
+    created: "2022-08-19T15:30:41.194583+08:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -74,9 +74,9 @@ entries:
   argocd-ecr-updater:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-07-14T16:43:45.731448+08:00"
+    created: "2022-08-19T15:30:41.216328+08:00"
     description: ArgoCD ECR Repository Token Refresher
-    digest: 1ad71e6742d4006b5bdd0976924fe24d85d7335683e4fb87e8854e4ad55fb2b5
+    digest: 453eba905c37f73faaa55e708b5e2a18d54cd3f86968cbb0e47f76d38733881e
     name: argocd-ecr-updater
     type: application
     urls:
@@ -84,7 +84,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-14T16:43:45.730691+08:00"
+    created: "2022-08-19T15:30:41.214368+08:00"
     description: A Helm chart for Kubernetes
     digest: d2002633656136b30005cf75328ad9b43b01aff8711ee93a723ea40c3696fcee
     name: argocd-ecr-updater
@@ -92,12 +92,23 @@ entries:
     urls:
     - https://splashtopinc.github.io/public-helm-chart/argocd-ecr-updater-0.1.0.tgz
     version: 0.1.0
+  aws-lb-controller-sa:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-08-19T15:30:41.217997+08:00"
+    description: A ServiceAccount for aws lb controller
+    digest: 89e739338bd2596ae72e23a93cf12b953b8a4625e8c83ffa60e9a1f57a3ed2b1
+    name: aws-lb-controller-sa
+    type: application
+    urls:
+    - https://splashtopinc.github.io/public-helm-chart/aws-lb-controller-sa-1.0.0.tgz
+    version: 1.0.0
   cloudwatch-agent:
   - apiVersion: v1
     appVersion: "1.247345"
-    created: "2022-07-14T16:43:45.732072+08:00"
+    created: "2022-08-19T15:30:41.220285+08:00"
     description: A Helm chart to deploy aws-cloudwatch-metrics with fluent bit
-    digest: 255ea25bdebca84d14e8eac946394cc5c3b8669b77165e615bc5482707a60879
+    digest: a86f6ad37e8350fab886eb28732c8c1dd1146313ae2f3dbf5564d12191c868a0
     home: https://splashtopinc.github.io/public-helm-chart/
     icon: https://raw.githubusercontent.com/aws/eks-charts/master/docs/logo/aws.png
     keywords:
@@ -114,9 +125,9 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-14T16:43:45.732678+08:00"
+    created: "2022-08-19T15:30:41.221109+08:00"
     description: A Helm chart for Kubernetes
-    digest: 0f9d1964cf66cd3a24c10502c579ec4999a8535dd245fd8bfdcc602663471f36
+    digest: 9f55e70433e9cb691c3054d64f128965d0ad090acf9d2c44b818c12462c60152
     name: helm-chart-test
     type: application
     urls:
@@ -125,12 +136,12 @@ entries:
   vault-pre-setting:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-07-14T16:43:45.735347+08:00"
+    created: "2022-08-19T15:30:41.222951+08:00"
     description: Create namespace, ServiceAccount and ClusterRoleBinding for Vault
-    digest: 24b60db565828c2de2a023b47dec2a74974157329f336b202521675381c5627b
+    digest: fbc448fe6cc2124c32c56c2005f8d991c7a37585c99a9807104c75db9184ab32
     name: vault-pre-setting
     type: application
     urls:
     - https://splashtopinc.github.io/public-helm-chart/vault-pre-setting-1.0.0.tgz
     version: 1.0.0
-generated: "2022-07-14T16:43:45.707+08:00"
+generated: "2022-08-19T15:30:41.18339+08:00"

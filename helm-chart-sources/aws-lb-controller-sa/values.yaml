@@ -1,0 +1,10 @@
+# Default values for aws-lb-controller-sa.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# iam role-arn with ALB iam permission
+role:
+  arn: arn:aws:iam::1111111111:role/cluster-aws-lb-controller-role
+
+namespace:
+  name: kube-system
